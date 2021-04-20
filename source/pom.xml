@@ -285,7 +285,7 @@ Bundle-DocURL:
                     <artifactId>content-package-maven-plugin</artifactId>
                     <version>1.0.2</version>
                     <configuration>
-                        <targetURL>http://${aem.host}:${aem.port}/crx/packmgr/service.jsp</targetURL>
+                        <targetURL>${aem.host.url.prefix}://${aem.host}:${aem.port}/crx/packmgr/service.jsp</targetURL>
                         <failOnError>true</failOnError>
                         <userId>${vault.user}</userId>
                         <password>${vault.password}</password>
@@ -585,7 +585,6 @@ Bundle-DocURL:
             <properties>
                 <aem.host>10.23.128.48</aem.host>
                 <aem.port>4502</aem.port>
-                <core.wcm.components.version>2.14.0</core.wcm.components.version>
             </properties>
         </profile>
 
@@ -602,7 +601,6 @@ Bundle-DocURL:
             <properties>
                 <aem.publish.host>10.23.128.48</aem.publish.host>
                 <aem.publish.port>4503</aem.publish.port>
-                <core.wcm.components.version>2.14.0</core.wcm.components.version>
             </properties>
         </profile>
 
@@ -619,7 +617,7 @@ Bundle-DocURL:
 
             <properties>
                 <aem.host>D58917402</aem.host>
-                <aem.port>4504</aem.port>
+                <aem.port>4502</aem.port>
             </properties>
         </profile>
 
@@ -635,7 +633,7 @@ Bundle-DocURL:
 
             <properties>
                 <aem.publish.host>D58917402</aem.publish.host>
-                <aem.publish.port>4505</aem.publish.port>
+                <aem.publish.port>4503</aem.publish.port>
             </properties>
         </profile>
 
